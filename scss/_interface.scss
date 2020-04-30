@@ -1,6 +1,7 @@
-* {
-  font-family: sans-serif;
+body {
+  @include reg;
 }
+
 img {
   max-width: 100%;
 }

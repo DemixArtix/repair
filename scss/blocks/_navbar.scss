@@ -21,7 +21,7 @@
     padding: 17px 30px;
     border-radius: 10px;
     border: none;
-    font-weight: 700;
+    @include bold;
     font-size: 13px;
 
   }
@@ -29,14 +29,14 @@
   &__address {
     color: $text-color;
     font-size: 13px;
-    font-weight: 400;
+    @include bold;
   }
 
   &__phone {
     text-decoration: none;
     color: $text-color;
     font-size: 20px;
-    font-weight: 700;
+    font-family: 'Museo Sans Bold';
   }
 
 }

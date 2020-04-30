@@ -1,5 +1,18 @@
-* {
-  font-family: sans-serif; }
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSans/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300; }
 
 img {
   max-width: 100%; }
@@ -38,17 +51,19 @@ img {
     padding: 17px 30px;
     border-radius: 10px;
     border: none;
+    font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
     font-size: 13px; }
   .navbar__address {
     color: #333333;
     font-size: 13px;
-    font-weight: 400; }
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700; }
   .navbar__phone {
     text-decoration: none;
     color: #333333;
     font-size: 20px;
-    font-weight: 700; }
+    font-family: 'Museo Sans Bold'; }
 
 @media (max-width: 768px) {
   .navbar__contacts {
@@ -73,6 +88,7 @@ img {
     .hero-text__title {
       color: #333333;
       font-size: 41px;
+      font-family: 'Museo Sans Bold', sans-serif;
       font-weight: 700;
       line-height: 55px;
       margin-bottom: 40px; }
@@ -80,6 +96,7 @@ img {
       display: inline-block;
       color: #333333;
       font-size: 20px;
+      font-family: 'Museo Sans Bold', sans-serif;
       font-weight: 700; }
   .hero-list {
     margin-top: 68px;
@@ -100,7 +117,6 @@ img {
     .hero-list__text {
       width: 240px;
       font-size: 14px;
-      font-weight: 400;
       line-height: 24px;
       margin-left: 30px; }
 
