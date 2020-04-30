@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   @include reg;
 }
@@ -27,4 +31,26 @@ img {
 
 .button {
   background-color: $main-color;
+  padding: 17px 30px;
+  border-radius: 10px;
+  border: none;
+  @include bold;
+  &:hover {
+    background-color: lighten($main-color, 10%);
+    cursor: pointer;
+  }
+}
+
+.section {
+  &-title {
+    color: $text-color;
+    @include bold;
+    font-size: 24px;
+  }
+  &-subtitle {
+    display: inline-block;
+    color: $text-color;
+    @include bold;
+    font-size: 16px;
+  }
 }

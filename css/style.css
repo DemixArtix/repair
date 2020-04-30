@@ -10,6 +10,9 @@
   src: url("../fonts/MuseoSans/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSans/MuseoSansCyrl-300.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+* {
+  box-sizing: border-box; }
+
 body {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300; }
@@ -30,7 +33,27 @@ img {
     max-width: 580px;
     width: 89%; } }
 .button {
-  background-color: #ffd200; }
+  background-color: #ffd200;
+  padding: 17px 30px;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700; }
+  .button:hover {
+    background-color: #ffdb33;
+    cursor: pointer; }
+
+.section-title {
+  color: #333333;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 24px; }
+.section-subtitle {
+  display: inline-block;
+  color: #333333;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 16px; }
 
 .navbar {
   padding: 8px 0; }
@@ -48,11 +71,6 @@ img {
     flex-direction: column;
     margin-right: 30px; }
   .navbar__button {
-    padding: 17px 30px;
-    border-radius: 10px;
-    border: none;
-    font-family: 'Museo Sans Bold', sans-serif;
-    font-weight: 700;
     font-size: 13px; }
   .navbar__address {
     color: #333333;
@@ -63,7 +81,8 @@ img {
     text-decoration: none;
     color: #333333;
     font-size: 20px;
-    font-family: 'Museo Sans Bold'; }
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700; }
 
 @media (max-width: 768px) {
   .navbar__contacts {
@@ -106,6 +125,8 @@ img {
       display: flex;
       align-items: center;
       margin-bottom: 23px; }
+      .hero-list__item:last-child {
+        margin-bottom: 0; }
     .hero-list__image {
       width: 38px;
       height: 38px;
@@ -143,5 +164,108 @@ img {
       margin-bottom: 20px; }
     .hero-list__text {
       margin-left: 15px; } }
+.offer {
+  padding: 84px 0 92px 0;
+  background: url("../img/offer/kitchen.png") no-repeat right;
+  position: relative; }
+  .offer:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    top: 0;
+    left: 0; }
+  .offer-block {
+    width: 50%;
+    padding-right: 90px;
+    position: relative; }
+  .offer__title {
+    width: 345px;
+    margin-bottom: 24px;
+    line-height: 35px; }
+  .offer__subtitle {
+    margin-bottom: 30px;
+    width: 250px; }
+  .offer__input {
+    width: 240px;
+    height: 65px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding-left: 33px; }
+    .offer__input:first-child {
+      margin-right: 11px; }
+    .offer__input::placeholder {
+      font-size: 15px;
+      color: #999999; }
+    .offer__input:focus {
+      outline: none; }
+  .offer__button {
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+    padding: 27px 0; }
+  .offer__footer {
+    display: flex; }
+  .offer__text {
+    width: 50%;
+    font-size: 15px;
+    line-height: 24px; }
+    .offer__text:first-child {
+      margin-right: 45px; }
+  .offer__phone {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #333333; }
+
+@media (max-width: 1200px) {
+  .offer__form {
+    display: flex;
+    flex-direction: column; }
+  .offer__input {
+    width: 100%; }
+    .offer__input:first-child {
+      margin-bottom: 10px; }
+  .offer__button {
+    margin-top: 15px;
+    padding: 27px 55px; }
+  .offer__footer {
+    flex-direction: column; }
+  .offer__text {
+    width: 100%;
+    margin: 18px 45px 0 0; }
+    .offer__text:first-child {
+      margin-top: 27px; }
+  .offer__phone {
+    display: flow-root; } }
+@media (max-width: 768px) {
+  .offer {
+    background: none; }
+    .offer-block {
+      width: 100%;
+      padding-right: 0; }
+    .offer__title {
+      width: 100%;
+      font-size: 18px;
+      line-height: 1.4; }
+    .offer__subtitle {
+      font-size: 14px;
+      margin-bottom: 27px; }
+    .offer__form {
+      display: flex;
+      flex-direction: column; }
+    .offer__input {
+      width: 100%; }
+      .offer__input:first-child {
+        margin-bottom: 8px; }
+    .offer__button {
+      margin-top: 10px; } }
+@media (max-width: 576px) {
+  .offer__button {
+    padding: 19px 65px;
+    font-size: 14px; } }
 
 /*# sourceMappingURL=style.css.map */
