@@ -11,7 +11,7 @@ img {
 }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
   margin: auto;
 }
 @media (max-width: 1200px) {
@@ -45,12 +45,37 @@ img {
   &-title {
     color: $text-color;
     @include bold;
-    font-size: 24px;
+    font-size: 30px;
+    margin-top: 0;
+    text-align: center;
   }
   &-subtitle {
     display: inline-block;
     color: $text-color;
+    font-size: 20px;
     @include bold;
-    font-size: 16px;
   }
 }
+
+.arrows {
+  &__left, &__right {
+    cursor: pointer;
+  }
+
+}
+
+.input {
+  border: 1px solid $border-input;
+  border-radius: 10px;
+  padding: 25px;
+  &::placeholder {
+    font-size: 15px;
+    color: $text-input;
+  }
+  &:focus {
+    outline: none;
+    border-color: orange;
+
+  }
+}
+

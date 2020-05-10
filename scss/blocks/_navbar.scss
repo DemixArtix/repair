@@ -19,6 +19,9 @@
 
   &__button {
     font-size: 13px;
+    &:focus {
+      outline: none;
+    }
 
   }
 

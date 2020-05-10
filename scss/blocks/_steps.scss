@@ -1,0 +1,142 @@
+.steps {
+  padding-top: 62px;
+  padding-bottom: 100px;
+  &-block {
+
+  }
+  &__title {
+    margin: auto;
+    max-width: 651px;
+    padding-bottom: 60px;
+  }
+  &__subtitle {
+    display: block;
+  text-align: center;
+    padding-bottom: 58px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      background-image: url("../img/steps/arrow.png");
+      background-size: 72px 25px;
+      width: 72px;
+      height: 25px;
+      background-repeat: no-repeat;
+      right: -90px;
+      top: -15px;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  &__icon {
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    border: 3.0px solid $main-color;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &__text {
+text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 1200px){
+    .steps {
+      &__title {
+        font-size: 18px;
+
+      }
+      &__subtitle {
+      }
+      &__list {
+      }
+      &__item {
+        &:after {
+          right: -40px;
+          top: -20px;
+        }
+
+        &:last-child {
+        }
+      }
+      &__icon {
+      }
+      &__text {
+        font-size: 12px;
+        line-height: 1.2;
+      }
+    }
+}
+
+@media (max-width: 768px){
+  .steps {
+    &__title {
+      font-size: 18px;
+
+    }
+    &__subtitle {
+    }
+    &__list {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    &__item {
+      margin-bottom: 34px;
+      &:after {
+        display: none;
+      }
+
+      &:last-child {
+        float:left;
+      }
+    }
+    &__icon {
+    }
+    &__text {
+      font-size: 12px;
+      line-height: 1.2;
+    }
+  }
+}
+
+@media (max-width: 360px){
+  .steps {
+    &__title {
+
+
+    }
+    &__subtitle {
+    }
+    &__list {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item {
+
+
+    }
+    &__icon {
+    }
+    &__text {
+    }
+  }
+}
+
