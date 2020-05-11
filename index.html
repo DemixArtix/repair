@@ -329,10 +329,10 @@
         <div class="form brif__form">
           <h3 class="form__title">Оставьте заявку на бесплатный  расчет ремонта по телефону</h3>
           <span class="form__subtitle">Для этого заполните форму ниже</span>
-          <form action="" id="brif-form" method="post">
+          <form action="" id="brif-form">
             <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
             <input type="tel" name="phone" class="input brif__input" placeholder="Ваш телефон">
-            <input type="tel" name="email" class="input brif__input" placeholder="Ваш email">
+            <input type="email" name="email" class="input brif__input" placeholder="Ваш email">
             <button class="button brif__button">Рассчитать стоимость</button>
             <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
           </form>
@@ -365,6 +365,7 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
 <script>
           new WOW().init();
 </script>
@@ -405,7 +406,20 @@
           required: true,
           email: true,
         }
-      }
+      },
+        messages: {
+          username: {
+            required: 'Введите ваше имя',
+          },
+          phone: {
+            required: 'Введите ваш телефон',
+          },
+          email: {
+            required: 'Email обязателен для ввода',
+            email: 'Введите email в формате example@mail.com',
+          },
+        }
+
     });
     //слайдер на owl carousel
     $(".owl-carousel").owlCarousel({

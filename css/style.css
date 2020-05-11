@@ -71,6 +71,12 @@ img {
     outline: none;
     border-color: orange; }
 
+.error {
+  border: 1px solid red; }
+
+.valid {
+  border: 1px solid green; }
+
 .navbar {
   padding: 8px 0; }
   .navbar-block {
@@ -720,6 +726,7 @@ img {
     margin: 61px auto auto;
     width: 100%; }
     .form__title {
+      margin-top: 50px;
       font-size: 18px; }
     .form__subtitle {
       font-size: 14px; }
