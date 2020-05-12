@@ -80,12 +80,33 @@ img {
 }
 
 
-.error {
+.invalid {
+  font-size: 12px;
+  margin-top: 5px;
   border: 1px solid red;
+  width: max-content;
 }
 
 
 .valid {
   border: 1px solid green;
+}
+
+#offer__username-error,
+#offer__phone-error,
+#offer__email-error,
+#brif__username-error,
+#brif__phone-error,
+#brif__email-error
+{
+  border: none;
+  position: absolute;
+}
+
+#offer__username-error,
+#offer__phone-error,
+#offer__email-error {
+  position: static;
+
 }
 
