@@ -27,13 +27,13 @@
      flex-direction: column;
      justify-content: space-between;
      &:first-child {
-       background: url("../img/benefit/item1.png") no-repeat;
+       background: url("../img/benefit/item1.jpg") no-repeat;
      }
      &:nth-child(2) {
-       background: url("../img/benefit/item2.png") no-repeat ;
+       background: url("../img/benefit/item2.jpg") no-repeat ;
      }
      &:last-child {
-       background: url("../img/benefit/item3.png") no-repeat;
+       background: url("../img/benefit/item3.jpg") no-repeat;
      }
 
    }

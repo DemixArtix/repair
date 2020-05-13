@@ -557,11 +557,11 @@ img {
   flex-direction: column;
   justify-content: space-between; }
   .benefit__item:first-child {
-    background: url("../img/benefit/item1.png") no-repeat; }
+    background: url("../img/benefit/item1.jpg") no-repeat; }
   .benefit__item:nth-child(2) {
-    background: url("../img/benefit/item2.png") no-repeat; }
+    background: url("../img/benefit/item2.jpg") no-repeat; }
   .benefit__item:last-child {
-    background: url("../img/benefit/item3.png") no-repeat; }
+    background: url("../img/benefit/item3.jpg") no-repeat; }
 .benefit__text {
   display: block;
   padding-top: 27px;
