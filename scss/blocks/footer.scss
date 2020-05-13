@@ -61,34 +61,14 @@
 }
 
 @media (max-width: 1200px) {
-  .footer {
-  }
-
-  .map {
-  }
-
   .contacts {
 
     padding-left: 50px;
-    &-block {
-    }
     &__title {
       margin-bottom: 60px;
     }
     &__list {
       padding-left: 0;
-    }
-    &__item {
-    }
-    &__icon {
-
-    }
-    &__text {
-
-      a {
-        &:focus {
-        }
-      }
     }
   }
 }
@@ -97,7 +77,6 @@
   .footer {
     display: flex;
     flex-direction: column;
-
   }
 
   .map {
@@ -126,16 +105,6 @@
     &__item {
       &:last-child {
         margin-bottom: 64px;
-      }
-    }
-    &__icon {
-
-    }
-    &__text {
-
-      a {
-        &:focus {
-        }
       }
     }
   }
